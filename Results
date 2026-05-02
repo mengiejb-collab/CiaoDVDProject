@@ -1,1 +1,14 @@
+Introduction:
+A recommendation system predicts user preferences and suggests items users may like 
+
+Dataset & EDA: The CiaoDVD contains the dataset with movie ratings ranging from 1-5. The matrix shows some sparsity because most users rate only a few movies.
+
+Models: The models used were Baseline and SVD
+Baseline-Simplest recommendation approach, predicts ratings using overall averages.
+SVD- more advanced than baseline, captures hidden relationships by breaking down the user-movie rating matrix.
+
+Results:
+After training the data and applying the baseline and SVD model, they showed similar performances. However, baseline achieved the lowest RSME(0.9541), while SVD had the lowest MAE(0.7400). Due to the sparsity in the dataset, complex models do not always outperform simple baselines. After also finding the precision and recall at k, I found  that at k=5, precision: 70% of the top 5 recommendations were relevant. We get around the same result when k=10. The recall also increases slightly as k increases. Overall this means that the recommendation model achieved strong top-k performance.
+
+Vibe coding reflection: I used AI assistants when I had specific coding issues. For example, installing the surprise function was difficult before asking how to properly install it. I had issues with the different versions of numpy I was using.I also used AI to understand the recommendation algorithm. I told it to explain to me the recommendation tools and how to use them for a recommendation system. I also used AI to understand the purpose of Precision and recall to understand my findings.
 
